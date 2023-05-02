@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: ets-enquiry
+  datasource:
+    url: jdbc:h2:mem:ets;INIT=CREATE SCHEMA IF NOT EXISTS ets
+    driverClassName: org.h2.Driver
+    username: sa
+    password: 
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop

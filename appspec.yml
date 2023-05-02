@@ -1,0 +1,9 @@
+version: 0.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "arn:aws:ecs:ap-southeast-1:976855960905:task-definition/EtsEnquiryServiceTask:1"
+        LoadBalancerInfo:
+          ContainerName: "EtsEnquiryContainer"
+          ContainerPort: 8088
