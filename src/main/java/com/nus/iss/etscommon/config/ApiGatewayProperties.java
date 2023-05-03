@@ -16,6 +16,9 @@ public class ApiGatewayProperties {
     private String paymentHost;
 
     private String bookingHost;
+
+    private String enquiryHost;
+
     private List<ApiProperties> apiList;
 
     public String getHost() {
@@ -48,6 +51,14 @@ public class ApiGatewayProperties {
 
     public void setPaymentHost(String paymentHost) {
         this.paymentHost = paymentHost;
+    }
+
+    public String getEnquiryHost() {
+        return enquiryHost;
+    }
+
+    public void setEnquiryHost(String enquiryHost) {
+        this.enquiryHost = enquiryHost;
     }
 
     public List<ApiProperties> getApiList() {

@@ -95,6 +95,9 @@ public class InternetCommonService {
             case BOOKING:
                 host = apiGatewayProperties.getBookingHost();
                 break;
+            case ENQUIRY:
+                host = apiGatewayProperties.getEnquiryHost();
+                break;
         }
         return host + "/" + apiList.get(0);
     }
