@@ -37,10 +37,6 @@ public class EnquiryService {
         return enquiryMapper.toDto(enquiryRepository.saveAndFlush(enquiry));
     }
 
-    public List<EnquiryDTO> findAll() {
-        return enquiryMapper.toDto(enquiryRepository.findAll());
-    }
-
     public EnquiryDTO save(EnquiryDTO enquiryDTO) {
         enquiryDTO.setReadEmail(true);
         Enquiry enquiry = enquiryMapper.toEntity(enquiryDTO);
