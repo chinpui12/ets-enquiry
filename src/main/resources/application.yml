@@ -28,6 +28,8 @@ spring:
         prepStmtCacheSqlLimit: 2048
         useServerPrepStmts: true
   jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
   liquibase:
     # Remove 'faker' if you do not want the sample data to be loaded automatically
     contexts: dev, faker
@@ -43,8 +45,6 @@ spring:
 
 server:
   port: 8088
-  
-
 management:
   endpoint:
     health:
