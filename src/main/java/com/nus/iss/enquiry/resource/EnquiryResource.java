@@ -40,7 +40,7 @@ public class EnquiryResource {
         return ResponseEntity.ok().body(result);
     }
 
-    @GetMapping("/get-enquiries")
+    @PostMapping("/get-enquiries")
     public ResponseEntity<List<?>> getListEnquiry(@RequestBody InternetTransferDTO internetTransferDTO) {
         EnquiryCriteria criteria = internetCommonService.decodeRequestParams(internetTransferDTO, EnquiryCriteria.class);
         log.debug("REST request to retrieve all enquiries by criteria: {}", criteria);
